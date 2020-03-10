@@ -15,8 +15,6 @@ public class ExcelDataProvider {
         for (int i = 1; i < rowCount; i++){
             for( int x = 0; x < colCount; x++){
                 String cellData = ExcelUtils.getCellDataString(i, x);
-               // double cellDataN = ExcelUtils.getCellDataNumeric(i, x);
-                //System.out.println(cellData);
                 data[i-1][x] = cellData;
             }
         }
